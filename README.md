@@ -73,7 +73,7 @@ var player = videojs('my-player', options, function onPlayerReady() {
 
 2、默认支持的组件有以下这些：
 
-```
+```Player
 Player
     PosterImage   //默认封面
     TextTrackDisplay
@@ -102,27 +102,34 @@ Player
 要根据产品风格去设计播放器的样式，所以样式的重置是必不可少的。接下来说下在修改播放器样式时踩到的一些坑。
 1.icon及颜色修改
 通过覆盖样式去重置样式。比如修改颜色
-```
+
+```css
 .vjs-control-bar{
     color:red;
     font-size:20px;
 }
 ```
+
 2.组件顺序
 组件放置顺序的修改，在video.js中找到这段代码，将数组里的顺序修改下就可以了。
+
 ```
 ControlBar.prototype.options_ = {
 loadEvent: 'play',
 children: ['playToggle', 'volumeMenuButton', 'currentTimeDisplay', 'timeDivider', 'durationDisplay', 'progressControl', 'liveDisplay', 'remainingTimeDisplay', 'customControlSpacer', 'playbackRateMenuButton', 'chaptersButton', 'subtitlesButton', 'captionsButton', 'fullscreenToggle']
 };
 ```
+
 3.hover提示
 组件hover提示同理，找到源码修改就好了
+
 ```
 k.prototype.controlText_ = "Play"     ------>     k.prototype.controlText_ = "播放"
 k.prototype.controlText_ = "Fullscreen"   ------>   k.prototype.controlText_ = "全屏"
 ```
+
 4.音量bar由横的变竖的
+
 ```
 var options = {
        volumeMenuButton: {
