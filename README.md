@@ -50,3 +50,20 @@ var player = videojs('my-player', options, function onPlayerReady() {
   });
 });
 ```
+对于视频播放来说，常用的功能有：
+
+1. 播放   this.play()
+
+2. 停止   -- video没有stop方法，可以用pause 暂停获得同样的效果
+
+3. 暂停   this.pause()
+
+4. 销毁  this.dispose()
+
+5. 监听  this.on('click',fn)
+
+6. 触发事件this.trigger('dispose')
+
+....
+
+以上的this是指在onPlayerReady函数中执行。
