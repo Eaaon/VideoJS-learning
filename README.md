@@ -97,6 +97,7 @@ Player
               VolumeHandle 
        PlaybackRateMenuButton  //播放速率
        ```
+       
 ### 五、皮肤
 要根据产品风格去设计播放器的样式，所以样式的重置是必不可少的。接下来说下在修改播放器样式时踩到的一些坑。
 1.icon及颜色修改
