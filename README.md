@@ -5,4 +5,9 @@
 
 # [Github-VideoJS](https://github.com/videojs "Github-VideoJS")
 
+1、导入
 
+```html
+<link href="//vjs.zencdn.net/5.19/video-js.min.css" rel="stylesheet">
+<script src="//vjs.zencdn.net/5.19/video.min.js"></script>
+```
