@@ -3,6 +3,6 @@
 
 # [Video.js - HTML5 Video Player](http://videojs.com "VideoJS.com")
 
-[Github](https://github.com/videojs "Github-VideoJS")
+# [Github-VideoJS](https://github.com/videojs "Github-VideoJS")
 
 
