@@ -4,6 +4,7 @@
 # [Video.js - HTML5 Video Player](http://videojs.com "VideoJS.com")
 
 # [Github-VideoJS](https://github.com/videojs "Github-VideoJS")
+### 一、入门代码
 
 1、导入CSS和JS
 
@@ -50,23 +51,27 @@ var player = videojs('my-player', options, function onPlayerReady() {
   });
 });
 ```
-对于视频播放来说，常用的功能有：
+### 二、播放器组件与初始化
 
-1. 播放   this.play()
+1、对于视频播放来说，常用的功能有：
 
-2. 停止   -- video没有stop方法，可以用pause 暂停获得同样的效果
+播放   this.play()
 
-3. 暂停   this.pause()
+停止   -- video没有stop方法，可以用pause 暂停获得同样的效果
 
-4. 销毁  this.dispose()
+暂停   this.pause()
 
-5. 监听  this.on('click',fn)
+销毁  this.dispose()
 
-6. 触发事件this.trigger('dispose')
+监听  this.on('click',fn)
+
+触发事件this.trigger('dispose')
 
 ....
 
 以上的this是指在onPlayerReady函数中执行。
+
+2、默认支持的组件有以下这些：
 
 ```
 Player
