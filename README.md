@@ -67,3 +67,28 @@ var player = videojs('my-player', options, function onPlayerReady() {
 ....
 
 以上的this是指在onPlayerReady函数中执行。
+
+```
+Player
+    PosterImage   //默认封面
+    TextTrackDisplay
+    LoadingSpinner
+    BigPlayButton    //大播放按钮
+    ControlBar    // 控制条
+        PlayToggle   //播放暂停
+        FullscreenToggle   //全屏
+        CurrentTimeDisplay   //当前播放时间
+        TimeDivider
+        DurationDisplay
+        RemainingTimeDisplay   //剩余播放时间
+        ProgressControl   //时间轴
+               SeekBar
+               LoadProgressBar
+               PlayProgressBar
+               SeekHandle
+        VolumeControl   //音量控制
+              VolumeBar
+              VolumeLevel
+              VolumeHandle 
+       PlaybackRateMenuButton  //播放速率
+       ```
