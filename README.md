@@ -34,8 +34,10 @@
 ```
 3、JS代码
 ```js
+var player = videojs('my-player');
+```
+```js
 var options = {};
-
 var player = videojs('my-player', options, function onPlayerReady() {
   videojs.log('Your player is ready!');
 
